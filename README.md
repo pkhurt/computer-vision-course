@@ -12,3 +12,20 @@ export PATH="/home/peter/anaconda3/bin/:$PATH"
 ```
 source ~/anaconda3/bin/activate
 ```
+
+## Create the conda enviroment of the course
+```
+conda env create -f cvcourse_linux.yml
+```
+
+## Activate and deactivate the created conda environment
+```
+#                                                                               
+# To activate this environment, use                                             
+#                                                                               
+#     $ conda activate python-cvcourse                                          
+#                                                                               
+# To deactivate an active environment, use                                      
+#                                                                               
+#     $ conda deactivate   
+```
