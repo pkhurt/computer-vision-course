@@ -45,7 +45,7 @@ This will create you a python notebook that is stored in your google drive. You 
 ### 2 - Numpy and image basics
 This section covers all the numpy and image basics that you need to get started. 
 #### Summary & Notebook
-> **_NOTE:_** [section_2_numpy_and_image.ipynb](https://github.com/pkhurt/computer-vision-course/blob/main/section_2_numpy_and_image.ipynb)
+> **_NOTEBOOK:_** [section_2_numpy_and_image.ipynb](https://github.com/pkhurt/computer-vision-course/blob/main/section_2_numpy_and_image.ipynb)
 
 ```python
 import numpy as np
@@ -54,4 +54,36 @@ import matplotlib.pyplot as plt
 from PIL import Image
 
 plt.imhshow(image)  # Most used command to show images throughout the lectures
+```
+### 3 - Image Basics With OpenCV
+This section covers opening and storing images, as well as drawing on images and mouse click events to draw on images.
+#### Summary & Notebooks
+> **_NOTEBOOK:_** [section_3_opening_files_with_openCv_script.py](https://github.com/pkhurt/computer-vision-course/blob/main/section_3_opening_files_with_openCv_script.py)
+```python
+import cv2
+
+img = cv2.imread(DATA_DIR)
+while True:
+  cv2.imshow("image_name", img)
+  cv2.waitKey(1) & 0xFF == 27:   # This stops the while loop when pressing the "esc" key
+    break
+cv2.destroyAllWindows()    #  This closes the window
+```
+> **_NOTEBOOK:_** [section_3_opening_files_with_openCv_script.py](https://github.com/pkhurt/computer-vision-course/blob/main/section_3_opening_files_with_openCv_script.py)
+```python
+# OpenCV and matplotlib have different order of the color channels
+# matplotlib -> RGB: Red, Green, Blue
+# OpenCV -> BGR: Blue, Green, Red
+rgb_colored_img = cv2.cvtColor(bgr_img, cv2.COLOR_BGR2RGB) # conversion between color channels
+
+# Read image in grayscale
+img_grayscale = cv2.imread(DATA_DIR, cv2.IMREAD_GRAYSCALE)
+
+# Resizing an image
+resized_img = cv2.resize(rgb_colored_img, (1000, 400)) # fixed values
+resized_img = cv2.resize(rgb_colored_img, (0,0),fix_img,width_ratio,height_ratio) # with a ratio
+
+# flipping an image
+cv2.flip(img, 0) # Around the x axis
+
 ```
