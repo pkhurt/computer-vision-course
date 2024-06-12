@@ -28,7 +28,7 @@ conda env create -f cvcourse_linux.yml
 # To deactivate an active environment, use                                                   
 #     $ conda deactivate   
 ```
-
+---
 ### Google Colab
 Google colab already has the environment set up to all the needs of the udemy course.
 Packages needed:
@@ -40,3 +40,18 @@ Packages needed:
 Go to your google drive account and click on the three stripes on the top left. Then click "more". You should see now Google Colab as a creatable file.
 
 This will create you a python notebook that is stored in your google drive. You can sync it also with your GitHub Account and give it access to your google drive data.
+
+## Sections
+### 2 - Numpy and image basics
+This section covers all the numpy and image basics that you need to get started. 
+#### Summary & Notebook
+> **_NOTE:_** [section_2_numpy_and_image.ipynb](https://github.com/pkhurt/computer-vision-course/blob/main/section_2_numpy_and_image.ipynb)
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+%matplotlib inline
+from PIL import Image
+
+plt.imhshow(image)  # Most used command to show images throughout the lectures
+```
