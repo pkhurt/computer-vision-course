@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread("/home/peter/workspace/computer-vision-course/Computer-Vision-with-Python/DATA/00-puppy.jpg")
+img = cv2.imread("images/gecko.jpeg")
 
 print(type(img))
 
