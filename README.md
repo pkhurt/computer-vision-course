@@ -42,10 +42,10 @@ Go to your google drive account and click on the three stripes on the top left. 
 This will create you a python notebook that is stored in your google drive. You can sync it also with your GitHub Account and give it access to your google drive data.
 
 ## Sections
-### 2 - Numpy and image basics
+### 1 - Numpy and image basics
 This section covers all the numpy and image basics that you need to get started. 
 #### Summary & Notebook
-> **_NOTEBOOK:_** [section_2_numpy_and_image.ipynb](https://github.com/pkhurt/computer-vision-course/blob/main/section_2_numpy_and_image.ipynb)
+> **_NOTEBOOK:_** [section_1_numpy_and_image.ipynb](https://github.com/pkhurt/computer-vision-course/blob/main/section_1_numpy_and_image.ipynb)
 
 ```python
 import numpy as np
