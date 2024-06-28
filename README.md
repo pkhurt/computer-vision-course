@@ -94,3 +94,8 @@ resized_img = cv2.resize(rgb_colored_img, (0,0),fix_img,width_ratio,height_ratio
 cv2.flip(img, 0) # Around the x axis
 
 ```
+
+### Object Tracking
+#### Optical Flow
+<!-- TODO: Describe shortly whats on: https://docs.opencv.org/3.4/d4/dee/tutorial_optical_flow.html -->
+<!-- TODO: Describe shortly the things used in section_7_57_...ipynb and scripts/object_tracking_with_webcam -->
