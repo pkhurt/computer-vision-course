@@ -18,6 +18,8 @@ def dense_optical_flow_object_tracking_with_webcam():
     a different one but stay more or less the same. With that one can track / identify multiple 
     objects in the video stream.
 
+    If an object is not moving, the color of the flow vector is black.
+
     Returns:
         None
     """
