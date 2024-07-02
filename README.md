@@ -99,3 +99,53 @@ cv2.flip(img, 0) # Around the x axis
 #### Optical Flow
 <!-- TODO: Describe shortly whats on: https://docs.opencv.org/3.4/d4/dee/tutorial_optical_flow.html -->
 <!-- TODO: Describe shortly the things used in section_7_57_...ipynb and scripts/object_tracking_with_webcam -->
+
+### MeanShift and CamShift
+TODO: Add description and links
+TODO: Add disadvantages
+
+### Tracking API Methods
+OpenCV offers API methods that can be used for object tracking. The API makes it easy to swap and replace 
+single methods in order to change the tracking algorithm.
+
+#### Overview / Examples
+##### Boosting Tracker
+Based off AdaBoost algorithm (HAAR Cascades). Evaluation across multiple framse.
+
+| Pros                         | Cons                          |
+|------------------------------|-------------------------------|
+| Very well known and studied algorithm       | Doesn't know when tracking has failed           |
+|        | Better techniques available      |
+
+##### Multiple Instance Learning (MIL) Tracker
+Similar to BOOSTING but considers neighborhood of points around the current location to create multiple instances.
+
+| Pros                         | Cons                          |
+|------------------------------|-------------------------------|
+| Good performance and dosn't drift as much as Boosting       | Doesn't know when tracking has failed           |
+|        | Can't recover from full obstruction      |
+
+##### Kernelized Correlation Filters (KCF) Tracker
+Exploits some properties of MIL Tracker and considers many overlapping points in the data. This leads to more accuracte and faster tracking.
+
+| Pros                         | Cons                          |
+|------------------------------|-------------------------------|
+| Better performance than MIL and Boosting       | Can't recover from full obstruction |
+| Good first choice       |       |
+
+##### Tracking, Learning and Detection (TLD) Tracker
+Tracker follows the object through the frames (frame by frame). The detector localizes all appearances that have been observed so far and corrects the tracker if necessary.
+
+| Pros                         | Cons                          |
+|------------------------------|-------------------------------|
+| Good performance      | Can provide many false positives |
+| Can handle obstruction in frames       |       |
+| Scale invariant (Can deal with large changes in scale)    |       |
+
+##### MedianFlow Tracker
+Tracks the object in both directions (forward and backward) in time and measures the discrepancies between these two trajectories.
+
+| Pros                         | Cons                          |
+|------------------------------|-------------------------------|
+| Good at reporting failed tracking    | Fails under large motion |
+| Works well with predictable motion (not pop up things)       |       |
