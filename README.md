@@ -149,3 +149,47 @@ Tracks the object in both directions (forward and backward) in time and measures
 |------------------------------|-------------------------------|
 | Good at reporting failed tracking    | Fails under large motion |
 | Works well with predictable motion (not pop up things)       |       |
+
+## DeepLearning for Computer Vision
+This section will use the python keras library.
+
+### Machine Learning Basics
+Method of data analysis that automates analytical model building.
+
+It uses algorithms that iteratively learn from data. 
+
+#### Applications of Machine Learning
+* Fraud detection
+* real-time ads on web pages
+* pricing models
+* pattern and image recognition
+* text sentiment analysis
+* email spam filters
+* ...
+
+#### Supervised learning
+The algorithms are trained with labelled example data, that are used as input where the desired output is known.
+
+**Example:** Pictures of a dog or a certain letter and the respective label.
+
+Supervised learning is commonly used in applications where the historical data predicts likely future events.
+
+##### Process
+![supervised_machine_learning_process](./documentation/supervised_machine_learning_process.jpg)
+
+1. Data Acquisition: Getting the data that is needed. Here open source data can be used
+2. Cleaning up: Resizing,...
+3. Splitting data into test & training data
+4. Training & Building: Apply the training and build a model for prediction
+5. Model testing: Apply the built model to the testdata and see if the classification worked out well
+6. Model deployment: Use the trained model for data that was not part of the training & test data set
+
+##### Classification metrics
+* Accuracy
+* Recall
+* Precision
+* F1-Score
+
+
+
+
