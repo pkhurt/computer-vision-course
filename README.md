@@ -1,5 +1,10 @@
+<p align="center" widht="100%">
+<img src="./documentation/computer_vision_course_logo.jpeg" alt="logo image" style="width:30%;height:30%;">
+</p>
+<hr>
+
 # computer-vision-course
-# Sources & udemy course
+## Sources & udemy course
 <b>Udemy course:</b> https://www.udemy.com/share/10143y3@GmhgL2nFG3QDxH4DGeblXwsz6uiLPxBsfSLtQVXG8rsIo30x1YTrkmNiyJJGdCgVwA==/
 
 
@@ -190,6 +195,8 @@ Supervised learning is commonly used in applications where the historical data p
 * Precision
 * F1-Score
 
+<hr>
 
-
-
+<p align="center" widht="100%">
+<img src="./documentation/computer_vision_course_logo.jpeg" alt="logo image" style="width:30%;height:30%;">
+</p>
