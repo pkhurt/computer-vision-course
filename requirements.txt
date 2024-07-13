@@ -3,3 +3,7 @@ matplotlib
 numpy==1.26.4
 opencv-python
 opencv-contrib-python
+scikit-learn
+pandas
+keras
+tensorflow
