@@ -6,7 +6,7 @@
 # computer-vision-course
 ## Sources & udemy course
 <b>Udemy course:</b> https://www.udemy.com/share/10143y3@GmhgL2nFG3QDxH4DGeblXwsz6uiLPxBsfSLtQVXG8rsIo30x1YTrkmNiyJJGdCgVwA==/
-
+<b>Great visualization page:</b> https://setosa.io/ev/image-kernels/
 
 ## Environment setup
 ### Python Virtualenv 
@@ -194,6 +194,37 @@ Supervised learning is commonly used in applications where the historical data p
 * Recall
 * Precision
 * F1-Score
+
+### Convolutional Neural Networks (CNNs)
+#### Tensors
+Tensors are needed to feed in images to the network
+Tensors are N-Dimensional that are build up to
+* scalar values (e.g. 3)
+* Vectors (e.g. [3,4,5])
+* Matrix (e.g. [[3,4,5], [4,5,6]])
+* Tensor (e.g. [[[3,4,5], [4,5,6]], [[2,1,5], [9,7,6]]])  -> Matrix of Matrices (Higher dimensional arrays)
+
+Tensors make it convenient to feed in set of images into our models - (Image, Height, Width, Color) -> Multiple arrays
+
+#### Architecture
+TODO
+
+#### Pooling / subsampling layer
+Creating a filter e.g. 2x2 and move it use the filter to set up a next image. E.g. [[2,1][-1,1]] and apply it to the image.
+This creates a new image where 4 pixels move to one multiplied by the 2x2 filter.
+
+This will remove a lot of inromation. It reduces computation time a lot.
+
+#### Dropout
+During training, units are randomly dropped along with their connections.
+
+Used as regularization to hlep prevent overfitting. Prevents units co-adapting too much.
+
+#### Famous CNNs
+* LeNet-5
+* AlexNet
+* GoogLeNet
+* ResNet
 
 <hr>
 
